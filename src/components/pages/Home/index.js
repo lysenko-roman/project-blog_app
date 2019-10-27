@@ -2,16 +2,15 @@ import React from 'react';
 
 
 const Home = (props) => {
-    const { title, numberPage} = props;
-
+   
+    console.log('render home'); 
     return (
         <div className="home">
+        
             <h1>
-                {title}
+                home
             </h1>
-            <h2>
-                {numberPage}
-            </h2> 
+            
         </div>
     )
 }
