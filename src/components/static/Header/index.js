@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.scss';
+import {NavLink} from 'react-router-dom';
 
 
 function Header() {
@@ -8,9 +9,10 @@ function Header() {
   return (
         <header className='header'>
             <ul className='header__menu'>
-                <li><a className='header__link' href='/'>Home</a></li>
-                <li><a className='header__link' href='/posts'>Posts</a></li>
-                <li><a className='header__link' href='/favorit'>Favorite</a></li>
+                <li><NavLink className='header__link' to='/'exact>Home</NavLink></li>
+                <li><NavLink className='header__link' to='/posts'exact>Posts</NavLink></li>
+                <li><NavLink className='header__link' to='/favorite'exact>Favorite</NavLink></li>
+
             </ul>  
         </header>
   );

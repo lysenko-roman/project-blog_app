@@ -1,9 +1,10 @@
 import React from 'react';
+import './styles.scss'
 
 
 const Home = (props) => {
    
-    console.log('render home'); 
+    
     return (
         <div className="home">
         
