@@ -1,10 +1,12 @@
 import React from 'react';
-import './styles.scss'
+import {NavLink} from 'react-router-dom';
+import './styles.scss';
 
 
 const Post = props => {
    
     const {title,
+           id,
            data_update,
            likes,
            description,
@@ -18,6 +20,7 @@ const Post = props => {
              <span>{likes}</span>
              <h2>{title}</h2>
              <p>{description}</p>
+             <NavLink to={`/post/${id}`}>...more</NavLink>
          
          </div>
         )

@@ -1,16 +1,24 @@
 const initialState = {
-    name: 'vasa',
-    lastPosts: [],
+    data: {
+        id: '',
+        title: '', 
+        description: '',
+        data_update: '',
+        user: {
+            id: '',
+            name: ''
+        },
+    },
 
 }
 
 export default (state = initialState, action) => {
    
     switch (action.type) {
-        case 'SET_LAST_POSTS':
+        case 'SET_POST':
             return {
                 ...state, 
-                lastPosts: action.posts,
+                data: action.post,
             } 
             
     
